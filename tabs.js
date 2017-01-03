@@ -24,8 +24,8 @@
     </div>
 */
 $(" .tab").click(function(){
-    $(this).parent().find(".tab").removeClass("act");
-    $(this).addClass("act");
+    $(this).parent().find(".tab").removeClass("active");
+    $(this).addClass("active");
     $(this).parent().parent().find("div[data-list]").hide();        
     var _tab = $(this).data("tab")   
     $(this).parent().parent().find("div[data-list='"+_tab+"']").show();         
